@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Layout global -->
+    <LinearLayout
+        android:id="@+id/layout_global"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Layout vertical superior -->
+        <LinearLayout
+            android:id="@+id/layout_v_superior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/txt_superior_1"
+                />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/txt_superior_2"
+                />
+
+        </LinearLayout>
+
+
+        <!-- Layout vertical inferior -->
+        <LinearLayout
+            android:id="@+id/layout_v_inferior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <!-- Layout horizontal - 1ª franja de botones -->
+            <LinearLayout
+                android:id="@+id/layout_h_inicial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/button1call"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/btn_1"
+                    android:textColor="@color/white"
+                    android:contentDescription="@string/btn_1"
+                    android:onClick="sendMessage"
+                    android:background="@drawable/btn_icon1"
+                    android:drawableTop="@drawable/ic_phone"/>
+
+                <Button
+                    android:id="@+id/button2search"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/btn_2"
+                    android:textColor="@color/white"
+                    android:contentDescription="@string/btn_2"
+                    android:onClick="sendMessage"
+                    android:background="@drawable/btn_icon2"
+                    android:drawableTop="@drawable/ic_search"/>
+
+                <Button
+                    android:id="@+id/button3alarm"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/btn_3"
+                    android:textColor="@color/white"
+                    android:contentDescription="@string/btn_3"
+                    android:onClick="sendMessage"
+                    android:background="@drawable/btn_icon3"
+                    android:drawableTop="@drawable/ic_alarm"/>
+
+
+            </LinearLayout>
+
+            <!-- Layout horizontal - 2ª franja de botones -->
+            <LinearLayout
+                android:id="@+id/layout_h_medio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/button4camera"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/btn_4"
+                    android:textColor="@color/white"
+                    android:contentDescription="@string/btn_4"
+                    android:onClick="sendMessage"
+                    android:background="@drawable/btn_icon4"
+                    android:drawableTop="@drawable/ic_camera"/>
+
+                <Button
+                    android:id="@+id/button5settings"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/btn_5"
+                    android:textColor="@color/white"
+                    android:contentDescription="@string/btn_5"
+                    android:onClick="sendMessage"
+                    android:background="@drawable/btn_icon5"
+                    android:drawableTop="@drawable/ic_settings"/>
+
+                <Button
+                    android:id="@+id/button6emergency"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/btn_6"
+                    android:textColor="@color/white"
+                    android:contentDescription="@string/btn_6"
+                    android:onClick="sendMessage"
+                    android:background="@drawable/btn_icon6"
+                    android:drawableTop="@drawable/ic_phone"/>
+
+            </LinearLayout>
+
+
+            <!-- Layout horizontal - Ultima franja -->
+            <LinearLayout
+                android:id="@+id/layout_h_final"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="@string/txt_inferior"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

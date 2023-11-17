@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AppInterfazConstraintLayout</string>
+    <string name="btn_1">Llamar</string>
+    <string name="btn_2">Buscar</string>
+    <string name="btn_3">Alarma</string>
+    <string name="btn_4">Camara</string>
+    <string name="btn_5">Ajustes</string>
+    <string name="btn_6">Emergencias</string>
+    <string name="txt_inferior">\No estoy encerrado con vosotros.\nVosotros estais encerrados conmigo.\'</string>
+    <string name="txt_superior_1">Soy alumno de 2ºDAM</string>
+    <string name="txt_superior_2">Y si miras al abismo, el abismo te devuelve la mirada</string>
+</resources>

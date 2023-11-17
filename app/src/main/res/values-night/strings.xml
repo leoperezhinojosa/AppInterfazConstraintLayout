@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_3">Alarma</string>
+    <string name="btn_2">Email</string>
+    <string name="btn_1">Llamar</string>
+</resources>
